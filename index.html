@@ -8,13 +8,13 @@ body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #00e1e9, #0bbb9e);
 }
+
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 25px;
     padding: 30px;
 }
-
 /* 📱 มือถือ */
 @media (max-width: 768px) {
   .gallery {
@@ -43,14 +43,6 @@ body {
   background: linear-gradient(45deg, #ffffff, #ffe6f0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-/* GALLERY */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
-    padding: 30px;
 }
 
 /* CARD */
