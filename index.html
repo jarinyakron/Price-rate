@@ -10,18 +10,15 @@ body {
 }
 
 .gallery {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     padding: 30px;
 }
-/* 📱 มือถือ */
 @media (max-width: 768px) {
   .gallery {
-    display: flex !important;
+    display: flex;
     flex-direction: column;
-    padding: 15px;
-    gap: 20px;
   }
 }
 /* HERO (รูปหัว) */
@@ -102,12 +99,7 @@ body {
 }
 /* 📱 MOBILE: ให้เป็นแถวเดียว */
 @media (max-width: 768px) {
-  .gallery {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    gap: 20px;
-  }
+  
 
   .card {
     border-radius: 20px;
